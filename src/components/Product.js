@@ -12,7 +12,7 @@ const Product = ({
       <li>
         <h3>{name}</h3>
         <h3><p>price: $ {price}</p></h3>
-        <a href = "www.google.com"><img src={imageUrl} alt={name} /></a>
+        <a href = "http://www.google.com"><img src={imageUrl} alt={name} /></a>
       </li>
     </ul>
   </div>
