@@ -13,7 +13,6 @@ const Root = () => (
     <Router>
     <h5><Title>STAN´S  API-STORE</Title></h5>
     
-    
       <Switch>
         
         <Route path="/detailProduct/:id">  
