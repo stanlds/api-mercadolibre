@@ -57,15 +57,16 @@ class ProductContainer extends React.Component {
         </section>
       </>
       <ReactPaginate  
-      previousLabel={"Anterior"}
-      nextLabel={"Siguiente"}
+      previousLabel={"← Previous"}
+      nextLabel={"Next →"}
       pageCount={amountPage}
-      containerClassName={"btn-group paginationBttns"}
-      previousLinkClassName={"btn btn-dark"}
-      nextLinkClassName={"btn btn-dark"}
-      pageLinkClassName={"btn btn-outline-secondary"}
-      activeLinkClassName={"btn btn-dark"}
       onPageChange={this.handlePagination}
+      containerClassName={"pagination"}
+      previousLinkClassName={"pagination__link"}
+      nextLinkClassName={"pagination__link"}
+      disabledClassName={"pagination__link--disabled"}
+      activeLinkClassName={"pagination__link--active"}    
+      
       />
       </div>
     )

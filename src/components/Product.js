@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 const Product = ({
   id,
@@ -11,8 +12,10 @@ const Product = ({
     <ul>
       <li>
         <h3>{name}</h3>
-        <h3><p>price: $ {price}</p></h3>
-        <a href = "http://www.google.com"><img src={imageUrl} alt={name} /></a>
+        <h3><p> $ {price}</p></h3>
+        <Link to={`/detailProduct/${id}`}>
+          <img src={imageUrl} alt={name}/>
+        </Link>
       </li>
     </ul>
   </div>

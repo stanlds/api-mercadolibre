@@ -13,6 +13,13 @@ export default {
   getProductBySearch
 }
 
+export async function getProductDetails(productId) {
+  const response = await fetch(`https://api.mercadolibre.com/items/${productId}`)
+  const responseJson = await response.json()
+  return await responseJson
+}
+
+
 export async function getPagination (page,q) {
   const response = await fetch(`https://api.mercadolibre.com/sites/MCO/search?limit=20&q=${q}&offset=${page*20}`)
   const responseJson = await response.json()
